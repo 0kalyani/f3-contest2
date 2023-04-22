@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #web{
+        border: 2px solid black;
+        background-color: black;
+        width: 500px;
+        height: 200px;
+        color: white;
+        position: absolute;
+        top: 200px;
+        left: 400px;
+      }
+      .a1{
+      position: absolute;
+      top: 10px;
+      left: 200px;
+      }
+
+      #s1{
+        width: 150px;
+        height: 30px;
+      }
+      #data{
+        border: 1px solid black;
+      }
+     #body{
+        visibility: hidden;
+     }
+
+     #f1{
+        width: 80%;
+        padding: 20px;
+        padding-left: 100px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 40px;
+        align-items: center;
+     }
+
+     #header{
+        width: 100%;
+        background-color: black;
+     }
+     #w1{
+        /* align-items: center;
+         */
+         padding-left: 450px;
+         padding-top: 50px;
+        color: white;
+     }
+     #h2{
+        color: white;
+        padding-left: 100px;
+     }
+     #flex{
+        display: flex;
+        gap: 200px;
+     }
+     #data{
+        font-size: 35px;
+     }
+     #z2{
+        color: white;
+     }
+     #e1{
+        color: white;
+     }
+
+     #z10{
+        padding-right: 80px;
+     }
+    </style>
+</head>
+<body>
+
+    <div id="web">
+      <div class="a1">
+        <h2>Wether Api</h2>
+        <button id="s1" onclick="myFunc()" >Fetch</button>
+      </div>
+    </div>
+    <div id="body">
+        <div id="header"> 
+            <h1 id="w1">Weather Api</h1>
+            <div id="flex">            <h2 id="h2">Lat:<span id="z2"></span></h2><h2 id="h2">Long:<span id="e1"></span></h2>            </div>
+             <iframe  id="f1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.09799766632!2d82.90870658618162!3d25.320894920622468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1682182820940!5m2!1sen!2sin" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div >
+            <h1>Weather Data</h1>
+            <div id="data">
+                <h6 >Location:<span id="z1">hi</span></h6>
+                <h6>Lat: <span id="z10"></span> Long:<span id="z11"></span></h6>
+                <h6>TimeZone: <span id="z3"></span></h6>
+                <h6>Wind Speed: <span id="z4"></span></h6>
+                <h6>Pressure: <span id="z5"></span></h6>
+                <h6>Humidity: <span id="z6"></span></h6>
+                <h6>Wind Direction:  <span id="z7"></span></h6>
+                <h6>UV Index:  <span id="z8"></span></h6>
+                <h6>Feels Like:  <span id="z9"></span></h6>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
